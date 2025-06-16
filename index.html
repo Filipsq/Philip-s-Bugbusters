@@ -14,70 +14,115 @@
     }
   </script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
-  <header class="bg-white shadow p-6">
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-black text-gray-100 font-sans">
+  <header class="bg-gray-800 shadow p-6">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-3xl font-bold">Filip Czarnecki</h1>
+      <div class="flex items-center space-x-4">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFmaJi1T_DUUg/profile-displayphoto-shrink_800_800/B4DZZcv.2yHwAc-/0/1745312805161?e=1755734400&v=beta&t=j9ZtezDVV2rvqqHyiEqsTWswlbgCMeutpU92hvGa5I0" 
+             alt="Filip Czarnecki" 
+             class="w-16 h-16 rounded-full object-cover border-2 border-green-400">
+        <h1 class="text-3xl font-extrabold text-green-400">Filip Czarnecki</h1>
+      </div>
       <div class="flex space-x-4 items-center">
-        <button onclick="toggleLanguage()" class="px-3 py-1 bg-blue-500 text-white rounded">PL / EN</button>
-        <nav class="space-x-4">
-          <a href="#about" class="hover:underline">About</a>
-          <a href="#portfolio" class="hover:underline">Portfolio</a>
-          <a href="#contact" class="hover:underline">Contact</a>
+        <button onclick="toggleLanguage()" class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white rounded transition duration-300">PL / EN</button>
+        <nav class="space-x-4 text-green-300">
+          <a href="#about" class="hover:text-white transition duration-300">About</a>
+          <a href="#portfolio" class="hover:text-white transition duration-300">Portfolio</a>
+          <a href="#contact" class="hover:text-white transition duration-300">Contact</a>
         </nav>
       </div>
     </div>
   </header>
 
-  <section id="about" class="container mx-auto px-6 py-10">
+  <section id="about" class="container mx-auto px-6 py-12">
     <div class="lang-en">
-      <h2 class="text-2xl font-semibold mb-4">QA Specialist – 7+ Years of Experience</h2>
-      <p class="mb-4">Hi, I'm Filip – a Top-Rated QA Specialist with 7+ years of experience in software, game, and mobile testing...</p>
+      <h2 class="text-3xl font-bold text-green-400 mb-4">QA Specialist – 7+ Years of Experience</h2>
+      <p class="mb-4 leading-relaxed">
+        Hi, I'm Filip – a Top-Rated QA Specialist with 7+ years of experience in software, game, and mobile testing. I've completed over 1000 hours on Upwork with a 97% job success score. My expertise spans a wide range of testing methodologies, tools, and platforms, including Unity, Unreal Engine, Jira, and ClickUp. I specialize in delivering high-quality bug reports, comprehensive documentation, and actionable insights that enhance software quality and user experience.
+      </p>
+      <p class="mb-2 font-semibold text-green-300">What skillset and experience do I have?</p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Functional, Regression, and Exploratory Testing</li>
+        <li>Compliance and Localization Testing</li>
+        <li>Testing in Unity and Unreal Engine (4/5)</li>
+        <li>Bug Reporting and Documentation Creation</li>
+        <li>Tools: Jira, Trello, Confluence, Monday, ClickUp</li>
+      </ul>
+      <p class="mb-2 font-semibold text-green-300">How do I approach your project?</p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Project Understanding: I assess the project requirements to understand the scope and expectations.</li>
+        <li>Test Planning: I create a comprehensive test plan tailored to your needs.</li>
+        <li>Execution: I conduct thorough testing, including exploratory, regression, and compliance checks.</li>
+        <li>Reporting: I provide detailed bug reports with screenshots, videos, and recommendations for fixes.</li>
+      </ul>
+      <p class="mb-2 font-semibold text-green-300">What sets me apart?</p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Delivered high-quality bug reports that helped reduce client post-release issues by 30%.</li>
+        <li>Completed time-sensitive projects under budget and ahead of schedule.</li>
+        <li>Excellent communication skills, ensuring smooth collaboration with international teams.</li>
+      </ul>
+      <p class="mb-2 font-semibold text-green-300">Available Equipment for Testing:</p>
+      <ul class="list-disc list-inside">
+        <li>PC: I7-9700k | 32GB RAM | RTX 2070 | Ultra-wide screen 21:9</li>
+        <li>Android: Samsung Galaxy S21+, Samsung S10 Plus</li>
+        <li>iOS: iPhone 11 Pro, iPhone X</li>
+        <li>Tablet: iPad 10.2 (9th Gen)</li>
+        <li>VR: Oculus Quest 2</li>
+        <li>SteamDeck</li>
+      </ul>
     </div>
     <div class="lang-pl hidden">
-      <h2 class="text-2xl font-semibold mb-4">Specjalista QA – ponad 7 lat doświadczenia</h2>
-      <p class="mb-4">Cześć, jestem Filip – Top-Rated QA z ponad 7-letnim doświadczeniem w testowaniu oprogramowania, gier i aplikacji mobilnych...</p>
+      <h2 class="text-3xl font-bold text-green-400 mb-4">Specjalista QA – ponad 7 lat doświadczenia</h2>
+      <p class="mb-4 leading-relaxed">Cześć, jestem Filip – Top-Rated QA z ponad 7-letnim doświadczeniem w testowaniu oprogramowania, gier i aplikacji mobilnych. Ukończyłem ponad 1000 godzin na Upwork z wynikiem 97% sukcesu. Moje doświadczenie obejmuje różne metodologie testowania, narzędzia i platformy, w tym Unity, Unreal Engine, Jira i ClickUp. Specjalizuję się w tworzeniu wysokiej jakości raportów błędów, szczegółowej dokumentacji i dostarczaniu informacji zwiększających jakość oprogramowania i doświadczenie użytkownika.</p>
     </div>
   </section>
 
-  <section id="portfolio" class="bg-white py-10 px-6">
+  <section id="portfolio" class="bg-gray-800 py-12 px-6">
     <div class="container mx-auto">
-      <h2 class="text-2xl font-semibold mb-6">Selected Projects</h2>
+      <h2 class="text-3xl font-bold text-green-400 mb-6">Selected Projects</h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-50 p-4 rounded-lg shadow">
-          <h3 class="font-bold text-xl">Quality Assurance for Mobile Game</h3>
-          <p class="text-sm mb-2">Jun 2023 – Oct 2024 | $4923.35 | 246 hours</p>
-          <p class="italic">"Filip delivered thorough, high-quality QA work with great attention to detail and excellent communication throughout the project."</p>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600 transition duration-300">
+          <h3 class="font-bold text-xl text-green-300">Quality Assurance for Mobile Game</h3>
+          <p class="text-sm mb-2 text-gray-300">Jun 2023 – Oct 2024 | $4923.35 | 246 hours</p>
+          <p class="italic text-gray-200">"Filip delivered thorough, high-quality QA work with great attention to detail and excellent communication throughout the project."</p>
         </div>
-        <!-- Additional projects here -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600 transition duration-300">
+          <h3 class="font-bold text-xl text-green-300">Game Testing for Indie Studio</h3>
+          <p class="text-sm mb-2 text-gray-300">Mar 2022 – May 2023 | $3200.00 | 180 hours</p>
+          <p class="italic text-gray-200">"Exceptional QA tester who found critical issues we had missed. Highly recommended for game testing projects."</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="container mx-auto px-6 py-10">
-    <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-    <p>Email: <a href="mailto:filipczarnecki.k@gmail.com" class="text-blue-600">filipczarnecki.k@gmail.com</a></p>
-    <p>Phone: +48 797 502 814</p>
-    <p>Location: Poland / Remote Worldwide</p>
-    <p class="mt-4">LinkedIn: <a href="https://www.linkedin.com/in/filip-czarnecki-831019188/" class="text-blue-600">linkedin.com/in/filip-czarnecki</a></p>
-    <p>Upwork: <a href="https://www.upwork.com/freelancers/~012801620883b0c358" class="text-blue-600">upwork.com/freelancers/filip</a></p>
+  <section id="contact" class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-green-400 mb-6">Contact</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <p class="mb-2"><span class="text-green-300 font-semibold">Email:</span> <a href="mailto:filipczarnecki.k@gmail.com" class="text-white hover:text-green-300">filipczarnecki.k@gmail.com</a></p>
+        <p class="mb-2"><span class="text-green-300 font-semibold">Phone:</span> +48 797 502 814</p>
+        <p class="mb-2"><span class="text-green-300 font-semibold">Location:</span> Poland / Remote Worldwide</p>
+        <p class="mb-2"><span class="text-green-300 font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/filip-czarnecki-831019188/" class="text-white hover:text-green-300">linkedin.com/in/filip-czarnecki</a></p>
+        <p><span class="text-green-300 font-semibold">Upwork:</span> <a href="https://www.upwork.com/freelancers/~012801620883b0c358" class="text-white hover:text-green-300">upwork.com/freelancers/filip</a></p>
+      </div>
+      
+      <form class="bg-gray-800 p-6 rounded-lg shadow-lg" action="https://formspree.io/f/moqglgpb" method="POST">
+        <label class="block mb-2 font-semibold text-green-300">Your Name</label>
+        <input type="text" name="name" required class="w-full bg-gray-700 border border-gray-600 p-2 mb-4 rounded text-white" />
 
-    <form class="mt-6 bg-white p-6 rounded shadow-md" action="https://formspree.io/f/moqglgpb" method="POST">
-      <label class="block mb-2 font-semibold">Your Name</label>
-      <input type="text" name="name" required class="w-full border p-2 mb-4 rounded" />
+        <label class="block mb-2 font-semibold text-green-300">Your Email</label>
+        <input type="email" name="email" required class="w-full bg-gray-700 border border-gray-600 p-2 mb-4 rounded text-white" />
 
-      <label class="block mb-2 font-semibold">Your Email</label>
-      <input type="email" name="email" required class="w-full border p-2 mb-4 rounded" />
+        <label class="block mb-2 font-semibold text-green-300">Your Message</label>
+        <textarea name="message" rows="4" required class="w-full bg-gray-700 border border-gray-600 p-2 mb-4 rounded text-white"></textarea>
 
-      <label class="block mb-2 font-semibold">Your Message</label>
-      <textarea name="message" rows="4" required class="w-full border p-2 mb-4 rounded"></textarea>
-
-      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send Message</button>
-    </form>
+        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded transition duration-300">Send Message</button>
+      </form>
+    </div>
   </section>
 
-  <footer class="bg-white text-center text-sm py-6 mt-10 border-t">
-    &copy; 2025 Filip Czarnecki. All rights reserved.
+  <footer class="bg-gray-800 text-center text-sm py-6 mt-10 border-t border-gray-700">
+    <p class="text-gray-400">&copy; 2025 Filip Czarnecki. All rights reserved.</p>
   </footer>
 </body>
 </html>
