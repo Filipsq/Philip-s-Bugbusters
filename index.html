@@ -5,13 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Filip Czarnecki - QA Specialist</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <script>
+ <script>
+    // Funkcja przełączająca język (PL/EN)
     function toggleLanguage() {
-      const en = document.querySelectorAll('.lang-en');
-      const pl = document.querySelectorAll('.lang-pl');
-      en.forEach(el => el.classList.toggle('hidden'));
-      pl.forEach(el => el.classList.toggle('hidden'));
+      const langEnElements = document.querySelectorAll('.lang-en');
+      const langPlElements = document.querySelectorAll('.lang-pl');
+      
+      if (langEnElements[0].classList.contains('hidden')) {
+        // Pokazujemy angielski
+        langEnElements.forEach(el => el.classList.remove('hidden'));
+        langPlElements.forEach(el => el.classList.add('hidden'));
+      } else {
+        // Pokazujemy polski
+        langEnElements.forEach(el => el.classList.add('hidden'));
+        langPlElements.forEach(el => el.classList.remove('hidden'));
+      }
     }
+
+    // Na start pokaż angielski (możesz zmienić na polski jeśli chcesz)
+    document.addEventListener('DOMContentLoaded', () => {
+      toggleLanguage(); // uruchom raz, aby ustawić domyślny język (domyślnie angielski)
+      toggleLanguage(); // drugi raz, żeby ustawić faktycznie angielski bez hidden
+    });
   </script>
 </head>
 <body class="bg-gradient-to-br from-gray-900 via-purple-900 to-black text-gray-100 font-sans">
@@ -24,18 +39,19 @@
              class="w-16 h-16 rounded-full object-cover border-2 border-green-400" />
         <h1 class="text-3xl font-extrabold text-green-400">Filip Czarnecki</h1>
       </div>
-      <div class="flex space-x-4 items-center">
+      <div class="flex space-x-6 items-center">
         <button onclick="toggleLanguage()" class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white rounded transition duration-300">PL / EN</button>
-        <nav class="space-x-4 text-green-300">
+        <nav class="space-x-6 text-green-300 font-semibold">
           <a href="#about" class="hover:text-white transition duration-300">About</a>
+          <a href="#services" class="hover:text-white transition duration-300">Services / Usługi</a>
           <a href="#portfolio" class="hover:text-white transition duration-300">Portfolio</a>
           <a href="#blog" class="hover:text-white transition duration-300">Blog</a>
-          <a href="#contact" class="hover:text-white transition duration-300">Contact</a>
+          <a href="#contact" class="hover:text-white transition duration-300">Contact / Kontakt</a>
         </nav>
       </div>
     </div>
   </header>
-
+  
   <!-- About -->
   <section id="about" class="container mx-auto px-6 py-12">
     <div class="lang-en">
@@ -51,7 +67,122 @@
       </p>
     </div>
   </section>
-<!-- Portfolio -->
+
+  <!-- Usługi -->
+  <section id="services" class="bg-gray-900 py-12 px-6">
+  <div class="container mx-auto max-w-4xl text-center text-gray-100">
+    <!-- English version -->
+    <div class="lang-en">
+      <h2 class="text-4xl font-bold text-green-400 mb-8">Services</h2>
+      
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Functionality QA</h3>
+        <p class="mb-2">
+          Verifying that the application works according to requirements and user expectations.
+        </p>
+        <p class="text-green-400 font-semibold">
+          Benefits: Ensures your product functions correctly before release.
+        </p>
+      </div>
+
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Player Support</h3>
+        <p class="mb-2">
+          Technical and content support for players to improve satisfaction and loyalty.
+        </p>
+        <p class="text-green-400 font-semibold">
+          Benefits: Keeps players happy and engaged.
+        </p>
+      </div>
+
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Localization QA</h3>
+        <p class="mb-2">
+          Checking translations and cultural adaptations for global markets.
+        </p>
+        <p class="text-green-400 font-semibold">
+          Benefits: Expands your reach to international audiences.
+        </p>
+      </div>
+
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Compliance QA</h3>
+        <p class="mb-2">
+          Verifying your product meets platform requirements (e.g. PlayStation, Xbox).
+        </p>
+        <p class="text-green-400 font-semibold">
+          Benefits: Smooth certification and product launch.
+        </p>
+      </div>
+
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Compatibility QA</h3>
+        <p class="mb-2">
+          Testing on multiple devices and configurations to ensure smooth performance.
+        </p>
+        <p class="text-green-400 font-semibold">
+          Benefits: Optimal quality across all hardware.
+        </p>
+      </div>
+    </div>
+
+    <!-- Polish version -->
+    <div class="lang-pl hidden">
+      <h2 class="text-4xl font-bold text-green-400 mb-8">Usługi</h2>
+      
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Testowanie funkcjonalne</h3>
+        <p class="mb-2">
+          Weryfikacja, czy aplikacja działa zgodnie z wymaganiami i oczekiwaniami użytkowników.
+        </p>
+        <p class="text-green-400 font-semibold">
+          Korzyści: Zapewnienie, że produkt działa poprawnie przed jego wydaniem.
+        </p>
+      </div>
+
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Wsparcie dla graczy</h3>
+        <p class="mb-2">
+          Pomoc techniczna i merytoryczna dla użytkowników gier, zwiększająca satysfakcję i lojalność.
+        </p>
+        <p class="text-green-400 font-semibold">
+          Korzyści: Utrzymanie zadowolonych i zaangażowanych graczy.
+        </p>
+      </div>
+
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Lokalizacja QA</h3>
+        <p class="mb-2">
+          Sprawdzenie tłumaczeń i dostosowanie kulturowe gry lub aplikacji na rynki zagraniczne.
+        </p>
+        <p class="text-green-400 font-semibold">
+          Korzyści: Szersze dotarcie do globalnej grupy odbiorców.
+        </p>
+      </div>
+
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Zgodność z wymaganiami</h3>
+        <p class="mb-2">
+          Weryfikacja, czy produkt spełnia wymagania i standardy platform (np. PlayStation, Xbox).
+        </p>
+        <p class="text-green-400 font-semibold">
+          Korzyści: Bezproblemowa certyfikacja i publikacja produktu.
+        </p>
+      </div>
+
+      <div class="mb-8 text-left">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">Kompatybilność QA</h3>
+        <p class="mb-2">
+          Testowanie na różnych urządzeniach i konfiguracjach, by zapewnić płynność działania.
+        </p>
+        <p class="text-green-400 font-semibold">
+          Korzyści: Zapewnienie optymalnej jakości gry/aplikacji na różnych sprzętach.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Portfolio -->
 <section id="portfolio" class="bg-gray-800 py-12 px-6">
   <div class="container mx-auto">
