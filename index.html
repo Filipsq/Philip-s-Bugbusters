@@ -28,6 +28,7 @@
         <nav class="space-x-4 text-green-300">
           <a href="#about" class="hover:text-white transition duration-300">About</a>
           <a href="#portfolio" class="hover:text-white transition duration-300">Portfolio</a>
+          <a href="#blog" class="hover:text-white transition duration-300">Blog</a>
           <a href="#contact" class="hover:text-white transition duration-300">Contact</a>
         </nav>
       </div>
@@ -95,34 +96,57 @@
     </div>
   </section>
 
-  <section id="contact" class="container mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold text-green-400 mb-6">Contact</h2>
+  <!-- Nowa sekcja Blog -->
+  <section id="blog" class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-green-400 mb-8">Blog</h2>
+    
     <div class="grid md:grid-cols-2 gap-8">
-      <div>
-        <p class="mb-2"><span class="text-green-300 font-semibold">Email:</span> <a href="mailto:filipczarnecki.k@gmail.com" class="text-white hover:text-green-300">filipczarnecki.k@gmail.com</a></p>
-        <p class="mb-2"><span class="text-green-300 font-semibold">Phone:</span> +48 797 502 814</p>
-        <p class="mb-2"><span class="text-green-300 font-semibold">Location:</span> Poland / Remote Worldwide</p>
-        <p class="mb-2"><span class="text-green-300 font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/filip-czarnecki-831019188/" class="text-white hover:text-green-300">linkedin.com/in/filip-czarnecki</a></p>
-        <p><span class="text-green-300 font-semibold">Upwork:</span> <a href="https://www.upwork.com/freelancers/~012801620883b0c358" class="text-white hover:text-green-300">upwork.com/freelancers/filip</a></p>
-      </div>
-      
-      <form class="bg-gray-800 p-6 rounded-lg shadow-lg" action="https://formspree.io/f/moqglgpb" method="POST">
-        <label class="block mb-2 font-semibold text-green-300">Your Name</label>
-        <input type="text" name="name" required class="w-full bg-gray-700 border border-gray-600 p-2 mb-4 rounded text-white" />
+      <!-- Artykuł 1 -->
+      <article class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-bold text-green-300 mb-4">Jak myśleć jak tester?</h3>
+        <div class="prose prose-invert max-w-none">
+          <p class="mb-4">Kluczowym aspektem w testowaniu oprogramowania jest umiejętność doskonałego wcielenia się w typowego użytkownika - zapomnienie o wszystkich swoich umiejętnościach testowania oraz wiedzy o danym projekcie.</p>
+          
+          <h4 class="text-xl font-semibold text-green-200 mt-6 mb-3">Pytania, które powinien zadawać sobie tester:</h4>
+          <ul class="list-disc list-inside mb-4">
+            <li>Czy to jest dla mnie proste? A może skomplikowane?</li>
+            <li>Czy użytkownik poradzi sobie z tym elementem interfejsu?</li>
+            <li>Jakie scenariusze mogą spowodować błąd?</li>
+            <li>Jak ta funkcja zachowa się w nieoczekiwanych sytuacjach?</li>
+          </ul>
+          
+          <p class="mb-4">Zawsze staram się przewidywać różne zachowania użytkowników i możliwe błędy, co pomaga wykryć problemy, które mogą umknąć innym.</p>
+        </div>
+      </article>
 
-        <label class="block mb-2 font-semibold text-green-300">Your Email</label>
-        <input type="email" name="email" required class="w-full bg-gray-700 border border-gray-600 p-2 mb-4 rounded text-white" />
-
-        <label class="block mb-2 font-semibold text-green-300">Your Message</label>
-        <textarea name="message" rows="4" required class="w-full bg-gray-700 border border-gray-600 p-2 mb-4 rounded text-white"></textarea>
-
-        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded transition duration-300">Send Message</button>
-      </form>
+      <!-- Artykuł 2 -->
+      <article class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-bold text-green-300 mb-4">Co to jest testowanie eksploracyjne?</h3>
+        <div class="prose prose-invert max-w-none">
+          <p class="mb-4">Testowanie eksploracyjne polega na swobodnym, nieformalnym badaniu aplikacji, podczas którego tester eksploruje różne funkcje i możliwości systemu, nie opierając się wyłącznie na wcześniej przygotowanych scenariuszach.</p>
+          
+          <h4 class="text-xl font-semibold text-green-200 mt-6 mb-3">Zalety testowania eksploracyjnego:</h4>
+          <ul class="list-disc list-inside mb-4">
+            <li>Szybkie wykrywanie niespodziewanych błędów</li>
+            <li>Elastyczność i dostosowanie do dynamicznych zmian w projekcie</li>
+            <li>Lepsze zrozumienie aplikacji i jej funkcji</li>
+          </ul>
+          
+          <p class="mb-4">Testowanie eksploracyjne wymaga kreatywności, intuicji i doświadczenia, a także umiejętności analizy zachowania systemu.</p>
+        </div>
+      </article>
     </div>
   </section>
 
-  <footer class="bg-gray-800 text-center text-sm py-6 mt-10 border-t border-gray-700">
-    <p class="text-gray-400">&copy; 2025 Filip Czarnecki. All rights reserved.</p>
-  </footer>
+  <section id="contact" class="bg-gray-800 py-12 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-green-400 mb-6">Get in Touch</h2>
+      <p class="mb-4 text-gray-300">You can reach me via email or LinkedIn for any inquiries or collaboration opportunities.</p>
+      <div class="space-x-4">
+        <a href="mailto:filip.czarnecki@example.com" class="inline-block px-6 py-3 bg-green-500 rounded hover:bg-green-600 transition duration-300">Email Me</a>
+        <a href="https://www.linkedin.com/in/filip-czarnecki" target="_blank" rel="noopener" class="inline-block px-6 py-3 bg-green-500 rounded hover:bg-green-600 transition duration-300">LinkedIn</a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
